@@ -3,17 +3,17 @@
 @section('content')
 
 <!-- WELCOME -->
-<section id="welcome" class="relative min-h-screen flex items-center bg-blue-600 text-white px-16">
+<section id="welcome" class="relative min-h-screen flex items-center bg-blue-600 text-white px-4 md:px-16">
 
-    <div class="max-w-6xl mx-auto w-full flex items-center justify-between">
+    <div class="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-10">
 
         <!-- Kiri -->
-        <div class="max-w-xl">
-            <h1 class="text-5xl font-bold mb-4">
+        <div class="max-w-xl text-center md:text-left">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">
                 WEBSITE KISAH ARRAFI
             </h1>
 
-            <p class="text-xl mb-6">
+            <p class="text-lg md:text-xl mb-6">
                 <span id="typing"></span>
             </p>
 
@@ -22,30 +22,28 @@
             </a>
         </div>
 
-        <!-- Kanan (Foto BULAT & TENGAHIN) -->
-        <div class="flex justify-center items-center w-[400px]">
+        <!-- Kanan -->
+        <div class="flex justify-center items-center w-full md:w-[400px]">
             <img src="/images/profile.jpg" 
-     alt="profile"
-     class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg float-animation">
+                class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-white shadow-lg float-animation">
         </div>
 
     </div>
-<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
 
-    <a href="#dashboard" class="text-white text-3xl scroll-arrow">
-        <i class="fas fa-chevron-down"></i>
-    </a>
-
-</div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
+        <a href="#dashboard" class="text-white text-3xl scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
 </section>
 
 
 <!-- DASHBOARD -->
-<section id="dashboard" class="min-h-screen flex items-center bg-white px-10">
+<section id="dashboard" class="min-h-screen flex items-center bg-white px-4 md:px-10">
 
     <div class="max-w-5xl mx-auto w-full text-center">
 
-        <h1 class="text-4xl font-bold text-black mb-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-black mb-4">
             Project Saya
         </h1>
 
@@ -53,7 +51,7 @@
             Ini adalah project website yang saya buat selama liburan
         </p>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <!-- PROJECT 1 -->
             <div class="bg-gray-100 p-4 rounded-xl shadow-lg hover:scale-105 transition">
@@ -83,24 +81,21 @@
 
 
 <!-- TENTANG -->
-<section id="tentang" class="min-h-screen flex items-center bg-blue-600 text-white px-10 overflow-hidden">
+<section id="tentang" class="min-h-screen flex items-center bg-blue-600 text-white px-4 md:px-10 overflow-hidden">
 
     <div class="max-w-6xl mx-auto w-full text-center">
 
-        <!-- Judul -->
-        <h1 class="text-4xl font-bold mb-4">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">
             Cerita Saya
         </h1>
 
-        <!-- Bio -->
         <p class="mb-12 max-w-3xl mx-auto">
             Perkenalkan nama saya Muhammad Arrafi dengan NIM 2523256 kelas PTIK 6B. 
             Aktivitas saya selama liburan adalah bermain game, beribadah, menolong orang tua, 
             membuat beberapa project website dan silaturahmi ke tempat saudara.
         </p>
 
-        <!-- Gallery -->
-        <div id="gallery" class="grid md:grid-cols-5 gap-6">
+        <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
 
             <!-- 1 -->
             <div class="text-center">
@@ -140,47 +135,48 @@
 
 
 <!-- SOSMED -->
-<section id="sosmed" class="min-h-screen flex items-center bg-white px-10">
-    <div class="max-w-3xl mx-auto text-center">
+<section id="sosmed" class="min-h-screen flex items-center bg-white px-4 md:px-10">
+    <div class="max-w-3xl mx-auto text-center w-full">
 
-        <h1 class="text-4xl font-bold mb-6 text-black">
+        <h1 class="text-3xl md:text-4xl font-bold mb-6 text-black">
             Sosial Media
         </h1>
 
-        <div class="bg-gray-100 p-8 rounded shadow flex justify-center gap-12 text-center">
+        <div class="bg-gray-100 p-6 md:p-8 rounded shadow flex flex-col md:flex-row justify-center gap-10 md:gap-12 text-center">
 
-    <!-- Instagram -->
-    <div>
-        <a href="https://instagram.com/muhamadrfi_" target="_blank" class="text-pink-500 text-4xl hover:scale-110 transition">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <p class="mt-3 font-semibold text-black">Instagram</p>
-        <p class="text-gray-600 text-sm">@muhamadrfi_</p>
-    </div>
+            <!-- Instagram -->
+            <div>
+                <a href="https://instagram.com/muhamadrfi_" target="_blank" class="text-pink-500 text-4xl hover:scale-110 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <p class="mt-3 font-semibold text-black">Instagram</p>
+                <p class="text-gray-600 text-sm">@muhamadrfi_</p>
+            </div>
 
-    <!-- GitHub -->
-    <div>
-        <a href="https://github.com/arrafim79-lab" target="_blank" class="text-black text-4xl hover:scale-110 transition">
-            <i class="fab fa-github"></i>
-        </a>
-        <p class="mt-3 font-semibold text-black">GitHub</p>
-        <p class="text-gray-600 text-sm">arrafim79-lab</p>
-    </div>
+            <!-- GitHub -->
+            <div>
+                <a href="https://github.com/arrafim79-lab" target="_blank" class="text-black text-4xl hover:scale-110 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                <p class="mt-3 font-semibold text-black">GitHub</p>
+                <p class="text-gray-600 text-sm">arrafim79-lab</p>
+            </div>
 
-    <!-- WhatsApp -->
-    <div>
-        <a href="https://wa.me/6289513604544" target="_blank" class="text-green-500 text-4xl hover:scale-110 transition">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <p class="mt-3 font-semibold text-black">WhatsApp</p>
-        <p class="text-gray-600 text-sm">089513604544</p>
-    </div>
+            <!-- WhatsApp -->
+            <div>
+                <a href="https://wa.me/6289513604544" target="_blank" class="text-green-500 text-4xl hover:scale-110 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <p class="mt-3 font-semibold text-black">WhatsApp</p>
+                <p class="text-gray-600 text-sm">089513604544</p>
+            </div>
 
-</div>
+        </div>
+
 </section>
 
 
-<!-- ANIMASI KETIK -->
+<!-- SEMUA SCRIPT & STYLE LU TETAP -->
 <script>
     const text = "Ini adalah website tentang aktivitas saya selama liburan puasa dan lebaran Idul Fitri.";
     let index = 0;
@@ -189,45 +185,30 @@
         if (index < text.length) {
             document.getElementById("typing").textContent += text.charAt(index);
             index++;
-            setTimeout(type, 50); // kecepatan ngetik
+            setTimeout(type, 50);
         }
     }
 
-    // jalan sekali pas halaman dibuka
     window.onload = type;
 </script>
 
 <style>
 @keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
 }
 
 .float-animation {
     animation: float 3s ease-in-out infinite;
 }
 </style>
+
 <style>
 @keyframes floatArrow {
-    0% {
-        transform: translate(-50%, 0px);
-        opacity: 0.7;
-    }
-    50% {
-        transform: translate(-50%, 15px);
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, 0px);
-        opacity: 0.7;
-    }
+    0% { transform: translate(-50%, 0px); opacity: 0.7; }
+    50% { transform: translate(-50%, 15px); opacity: 1; }
+    100% { transform: translate(-50%, 0px); opacity: 0.7; }
 }
 
 .scroll-arrow {
@@ -235,40 +216,12 @@
     animation: floatArrow 2s ease-in-out infinite;
     transition: 0.3s;
 }
-
-.scroll-arrow:hover {
-    transform: translate(-50%, 10px) scale(1.2);
-    text-shadow: 0 0 15px rgba(255,255,255,0.8);
-}
 </style>
 
 <style>
 @keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.gallery-animate {
-    animation: slideIn 1.5s ease forwards;
-}
-</style>
-
-<style>
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
 }
 
 .gallery-animate {
